@@ -267,6 +267,13 @@ body {
   padding: 12px 12px 12px 0;
 }
 
+.nav-burger,
+.nav-burger:hover,
+.nav-burger:active {
+  outline: none;
+  box-shadow: none;
+}
+
 @media (max-width: 850px) {
   .site-head {
     padding: 0;

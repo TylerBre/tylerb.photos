@@ -8,9 +8,8 @@ const Layout = props => {
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
         <div className="site-head-container">
-          <a
+          <button
             className="nav-burger"
-            href={`#`}
             onClick={() => setToggleNav(!toggleNav)}
           >
             <div
@@ -23,17 +22,21 @@ const Layout = props => {
                 <div className="hamburger-inner" />
               </div>
             </div>
-          </a>
-          <nav class="site-head-left">
-            <ul className="nav" role="menu">
-              <li role="menuitem">
+          </button>
+          <nav className="site-head-left">
+            <ul className="nav">
+              <li>
                 <Link to={`/`}>Home</Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/store`}>Store</Link>
               </li>
-              <li role="menuitem">
-                <a href="https://tylerbreland.com" target="_blank">
+              <li>
+                <a
+                  href="https://tylerbreland.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   About
                 </a>
               </li>
