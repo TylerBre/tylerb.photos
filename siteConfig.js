@@ -1,9 +1,11 @@
 module.exports = {
-  name: 'London',
-  shortName: 'London',
-  description: 'A bold, minimal theme for Gatsby, focused on clean typography & beautiful imagery',
-  url: 'https://gatsby-london.netlify.com', // Domain of your site without prefix!
-  prefix: '/',
-  author: 'Imed Adel',
-  twitter: 'Imed_Adel'
+  name: "Tyler Breland Photography",
+  shortName: "tylerb.photos",
+  description: "Tyler Breland is a photographer located in Chicago.",
+  url: "https://tylerb.photos",
+  prefix: "/",
+  author: "Tyler Breland",
+  twitter: "TylerBreland6",
+  instagram: "tyler_b_photos",
+  email: "hello@tylerbreland.com",
 }
