@@ -14,21 +14,17 @@ import "../utils/css/screen.css"
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  const seoKeywords = [
+    "portfolio",
+    "photography",
+    "street photography",
+    "film photography",
+    "analog photography",
+  ]
 
   return (
     <Layout title={siteTitle}>
-      <SEO
-        title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
-      {/* <Bio /> */}
-      {data.site.siteMetadata.description && (
-        <header className="page-head">
-          <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
-          </h2>
-        </header>
-      )}
+      <SEO title="Image Series" keywords={seoKeywords} />
       <div className="post-feed">
         {posts.map(({ node }, postCounter) => {
           return (
