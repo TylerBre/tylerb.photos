@@ -36,6 +36,7 @@
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "husky": "^2.2.0",
+    "node-fetch": "^2.6.11",
     "postcss-color-function": "^4.1.0",
     "postcss-custom-properties": "^8.0.10",
     "postcss-easy-import": "^3.0.0",
@@ -53,8 +54,13 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "gen-gql": "node ./create-gql-schema.js",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
+  "browserslist": [
+    "defaults and supports es6-module",
+    "maintained node versions"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && echo \"\nRemember, you must manually build and commit/push in order to deploy changes.\n\""
