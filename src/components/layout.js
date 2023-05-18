@@ -28,9 +28,9 @@ const Layout = props => {
               <li>
                 <Link to={`/`}>Home</Link>
               </li>
-              <li>
-                <Link to={`/store`}>Store</Link>
-              </li>
+              {/*<li>*/}
+              {/*  <Link to={`/store`}>Store</Link>*/}
+              {/*</li>*/}
               <li>
                 <a
                   href="https://tylerbreland.com"
