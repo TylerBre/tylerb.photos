@@ -11,7 +11,7 @@ import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments,
 // remove unnecessary components, export as draft template
 
-const BlogIndex = ({ data }, location) => {
+const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
@@ -46,13 +46,6 @@ const BlogIndex = ({ data }, location) => {
 }
 
 const indexQuery = graphql`
-  fragment GatsbyImageSharpFluid on ImageSharpFluid {
-    base64
-    aspectRatio
-    src
-    srcSet
-    sizes
-  }
   query {
     site {
       siteMetadata {
